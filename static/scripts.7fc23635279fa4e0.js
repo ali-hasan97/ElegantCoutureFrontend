@@ -1,0 +1,1 @@
+function check(){var e=document.getElementById("psw");e.value!=document.getElementById("psw-repeat").value?e.setCustomValidity("Password Must be Matching."):e.setCustomValidity("")}

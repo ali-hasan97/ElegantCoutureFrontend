@@ -1,0 +1,61 @@
+body {
+  background-color: #acacac;
+}
+
+.d-flex {
+  flex-direction: row;
+}
+
+.login {
+  background-color: white;
+  width: 400px;
+  margin: 70px auto;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.login button {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+
+.formClass {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.formClass input.checked {
+  margin-bottom: 0;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1abc9c;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+  color: #1abc9c;
+}

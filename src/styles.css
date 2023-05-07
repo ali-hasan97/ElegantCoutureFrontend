@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: white;
+}
+
+.item-group-container {
+  padding-top: 72px;
+  margin-left: 160px;
+  margin-right: 160px;
+}
+
+.item-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.item {
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  max-width: calc(375px + 2 * 1.3rem + 1px);
+}
+
+.item:hover {
+  background: rgb(200, 187, 221);
+}
+
+.item img {
+  aspect-ratio: 0.75;
+  max-width: 375px;
+  width: 100%;
+}
+
+.item-image-top:hover {
+  opacity: 1;
+}
+
+p.checkout {
+  margin-bottom: 0;
+}
