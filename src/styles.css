@@ -15,6 +15,8 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 16px;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
 .item {
@@ -22,6 +24,7 @@ body {
   border-radius: 2rem;
   border: 1px solid transparent;
   max-width: calc(375px + 2 * 1.3rem + 1px);
+  min-width: 200px;
 }
 
 .item:hover {

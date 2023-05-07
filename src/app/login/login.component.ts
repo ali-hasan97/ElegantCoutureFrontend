@@ -29,6 +29,7 @@ export class LoginComponent implements OnInit {
       this.invalidLogin = false;
       this.loginSuccess = true;
       this.successMessage = 'Login Successful.';
+      localStorage.setItem("userId", this.username);
       
       // redirect to intended page if there is a returnUrl
       const returnUrl = this.route.snapshot.queryParams['returnUrl'];
