@@ -1,6 +1,6 @@
 <form (ngSubmit)=onSubmit() method="post">
     <div class="container login">
-      <h1>Register</h1>
+      <h1 class="white-txt">Register</h1>
       <!-- <p>Please fill in this form to create an account.</p>
       <hr> -->
       
@@ -11,6 +11,6 @@
         <input type="password" [(ngModel)]="pswRepeat" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" (input)="check()" required>
         <button type="submit" class="registerbtn">Sign up</button>
       </div>
-      <p>Already have an account? <a routerLink="/login">Sign in</a>.</p>
+      <p class="white-txt">Already have an account? <a routerLink="/login">Sign in</a>.</p>
     </div>
   </form>

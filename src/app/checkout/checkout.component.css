@@ -1,4 +1,10 @@
-div.product{
-    display: flex;
-    
+#order,
+#cc-form {
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+h2,
+#cc-form {
+    margin-top: 16px;
 }

@@ -14,6 +14,7 @@ import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/
 import { LogoutComponent } from './logout/logout.component';
 import { FormsModule } from '@angular/forms';
 import { HttpInterceptorService } from './http-interceptor.service';
+import { OrdersComponent } from './orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HttpInterceptorService } from './http-interceptor.service';
     ContactComponent,
     CheckoutComponent,
     UploadComponent,
-    LogoutComponent
+    LogoutComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,32 @@
+h2,
+#accordionExample {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 16px;
+}
+
+.product-body,
+.product-heading,
+.order-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.order-row {
+  display: flex;
+}
+
+.delete-order {
+  margin-right: -72px;
+  visibility: hidden;
+  background-color: red;
+}
+
+.order-row:hover .delete-order {
+  visibility: visible;
+}

@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { UploadComponent } from './upload/upload.component';
 import { AuthGuardService } from './auth-guard.service';
+import { OrdersComponent } from './orders/orders.component';
 
 const routes: Routes = [
 {path: '', component: HomeComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
 {path: 'register', component: RegisterComponent},
 {path: 'about', component: AboutComponent},
 {path: 'upload', component: UploadComponent, canActivate: [AuthGuardService]},
+{path: 'orders', component: OrdersComponent, canActivate: [AuthGuardService]},
 {path: 'checkout', component: CheckoutComponent, canActivate: [AuthGuardService]}];
 
 @NgModule({

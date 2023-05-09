@@ -21,21 +21,18 @@
           <a class="nav-link" routerLink="/" aria-current="page">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/about">About</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" routerLink="/checkout">
             Checkout
           </a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="isSeller" class="nav-item nav-link" routerLink="/orders">Orders</a>
         </li>
         <li class="nav-item">
           <a *ngIf="!isLoggedIn" class="nav-link" id="log" routerLink="/login">Log In</a>
         </li>
         <li class="nav-item">
           <a *ngIf="isLoggedIn" class="nav-item nav-link" routerLink="/logout" (click)=handleLogout()>Log Out</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item nav-link" routerLink="/upload">Upload</a>
         </li>
       </ul>
       <form class="d-flex" role="search">

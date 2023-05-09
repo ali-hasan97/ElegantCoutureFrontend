@@ -11,7 +11,8 @@ body {
   margin-right: 160px;
 }
 
-.item-group {
+.item-group,
+#products {
   display: flex;
   justify-content: center;
   margin-top: 16px;
@@ -31,6 +32,21 @@ body {
   background: rgb(200, 187, 221);
 }
 
+.item-title {
+  margin-top: 8px;
+}
+
+.item-price-quantity {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.item-price-quantity h5 {
+  margin-bottom: 0;
+  margin-right: 8px;
+}
+
 .item img {
   aspect-ratio: 0.75;
   max-width: 375px;
@@ -41,6 +57,3 @@ body {
   opacity: 1;
 }
 
-p.checkout {
-  margin-bottom: 0;
-}

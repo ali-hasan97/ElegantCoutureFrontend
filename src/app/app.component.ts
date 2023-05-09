@@ -10,6 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class AppComponent implements OnInit {
 
   isLoggedIn = false;
+  isSeller = false;
 
   constructor(private route: ActivatedRoute,
     private router: Router,
@@ -18,8 +19,13 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.authenticationService.isUserLoggedInAtPresent().subscribe(loggedIn=>{
       this.isLoggedIn = loggedIn;
+      console.log('menu ->' + this.isLoggedIn);
     });
-    console.log('menu ->' + this.isLoggedIn);
+
+    this.authenticationService.isSellerLoggedInAtPresent().subscribe(sellerLoggedIn=>{
+      this.isSeller = sellerLoggedIn;
+      console.log("seller? " + this.isSeller)
+    });
   }
 
   handleLogout() {

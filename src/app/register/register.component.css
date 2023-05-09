@@ -7,7 +7,7 @@ body {
 }
 
 .login {
-  background-color: white;
+  background-color: black;
   width: 400px;
   margin: 70px auto;
   padding: 40px;
@@ -58,4 +58,8 @@ button:hover {
 a {
   text-decoration: none;
   color: #1abc9c;
+}
+
+.white-txt {
+  color: white;
 }
